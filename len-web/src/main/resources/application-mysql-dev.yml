@@ -5,7 +5,8 @@ spring:
       restart:
         enabled: true
   datasource:
-        url: jdbc:mysql://localhost:3306/kuaisukaifa2019-01-28?useUnicode=true&characterEncoding=UTF-8
+        #url: jdbc:mysql://localhost:3306/kuaisukaifa2019-01-28?useUnicode=true&characterEncoding=UTF-8
+        url: jdbc:mysql://49.4.22.220:30535/lenos?useUnicode=true&characterEncoding=UTF-8
         username: root
         password: root
         # 使用druid数据源
