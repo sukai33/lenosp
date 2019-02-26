@@ -1,0 +1,32 @@
+https://gitee.com/bweird/lenosp
+lenos(p为spring boot 2.0 版本扩展名)一款快速开发模块化脚手架，采用spring boot 2.0.1、spring、SpringMvc、mybatis、shiro、activiti工作流、swagger、ehcache、redis、quartz、freemarker、layui技术开发；博客采用vue前后分离，持久层集成tkmapper丰富简单数据交互，支持mysql/sqlserver数据源，实现功能有系统模块：菜单管理、用户管理、角色管理，系统监控：系统日志、接口api、sql监控、可配置化定时任务，工作流程管理：流程管理(动态给节点配置角色)、模块列表(新建编辑发布流程)、请假流程、待办任务。博客模块为单独的前端后台多页面，服务为lenosp，本项目会一直维护并集成新的技术，给您的开发节约时间成本。演示地址： 收起
+http://www.lenosp.cn
+演示地址
+www.lenosp.cn admin 123456 博客blog.lenosp.cn
+头像说明
+修改 application.yml imagePath 路径 把image文件夹图片赋值进路径，即可正常展示头像
+启动说明
+git clone https://gitee.com/bweird/lenosp.git
+mvn clean package
+mvn package
+java -jar len-web.jar
+
+db使用mysql，项目数据库在 根目录db文件夹下， 导入数据库后 设定数据库用户名密码 在文件lenosp\len-web\src\main\resources\application.yml中 项目开始会报实体类 get set错误，这是正常的，因为本项目entity使用的是 lombok 大大简化了代码量 您可以直接运行，项目可以正常启动。 如何消除？ 如果您使用的为idea 只需要file -> setting->plugins->Browse Repositeories 输入 lombok 集成插件重启idea即可消除错误 如果您使用 eclipse 需要下载 lombk jar包 手动集成。
+
+http://localhost:8089/login
+admin 123456
+
+技术
+jdk：1.8
+核心框架：spring boot 2.0.1.RELEASE
+安全框架：Apache Shiro
+工作流引擎：Activiti
+数据库连接池：druid
+视图框架：spring mvc
+持久层框架：MyBatis
+模板引擎：freemarker
+缓存：redis、ehcache
+定时：quartz 2.3.0
+前端页面：layui
+博客前端：vue、iview
+登录账号：admin 密码：123456
