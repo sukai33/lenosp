@@ -17,8 +17,8 @@ public class Md5Util {
    * 测试
    * @param args
    */
-  public static void main(String[] args) {
+ /* public static void main(String[] args) {
   String str= getMD5("123456","tom");
    System.out.println(str);
-  }
+  }*/
 }
