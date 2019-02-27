@@ -25,7 +25,7 @@ public class JdbcUtil {
     return con;
   }
 
-  public static void main(String[] args) throws SQLException {
+/*  public static void main(String[] args) throws SQLException {
     Connection con= getConnection();
     Statement statement = con.createStatement();
     String sql = "select * from z_user";
@@ -34,5 +34,5 @@ public class JdbcUtil {
      System.out.println(rs.getString("username"));
    }
 
-  }
+  }*/
 }
