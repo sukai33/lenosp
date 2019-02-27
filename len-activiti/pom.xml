@@ -12,7 +12,8 @@
   <artifactId>len-activiti</artifactId>
 
   <name>len-activiti</name>
-  <url>http://maven.apache.org</url>
+  <!--<url>http://maven.apache.org</url>-->
+  <!-- <url>http://localhost:8081/nexus/content/groups/public/</url>-->
  <!-- <packaging>war</packaging>-->
 
   <properties>
@@ -74,6 +75,16 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <classifier>exec</classifier>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
     <resources>

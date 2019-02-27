@@ -12,8 +12,8 @@
   <artifactId>len-sys</artifactId>
 
   <name>len-sys</name>
-  <url>http://maven.apache.org</url>
-
+  <!--<url>http://maven.apache.org</url>-->
+<url>http://localhost:8081/nexus/content/groups/public/</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -32,10 +32,28 @@
   <build>
     <finalName>${project.artifactId}</finalName>
     <plugins>
+
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <classifier>exec</classifier>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
+      <!--<plugin>
+        <artifactId>maven-install-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>-->
     </plugins>
   </build>
 </project>

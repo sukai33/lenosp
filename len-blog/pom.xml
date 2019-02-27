@@ -11,7 +11,7 @@
 
     <artifactId>len-blog</artifactId>
 
-
+   <!-- <url>http://localhost:8081/nexus/content/groups/public/</url>-->
 
     <dependencies>
         <dependency>
@@ -34,6 +34,16 @@
         <plugin>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <classifier>exec</classifier>
+            </configuration>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>repackage</goal>
+                    </goals>
+                </execution>
+            </executions>
         </plugin>
     </plugins>
     </build>
