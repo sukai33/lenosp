@@ -45,7 +45,7 @@
       <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
-  <build>
+<!--  <build>
     <finalName>len-web</finalName>
 
       <plugins>
@@ -63,7 +63,7 @@
                 <goal>repackage</goal>
               </goals>
             </execution>
-          </executions>
+          </executions>-->
   <build>
     <finalName>${project.artifactId}-${project.version}</finalName>
     <plugins>
